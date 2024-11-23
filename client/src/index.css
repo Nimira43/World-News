@@ -8,3 +8,11 @@ body {
   font-family: 'League Spartan', sans-serif;
   font-weight: 300;
 }
+
+:root {
+  --primary: #0d7680;
+  --secondary: #f2dfce;
+  --lace: #fff1e0;
+  --floral: #fff9f5;
+  --dark
+}
