@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Foldit:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,9 +10,19 @@ body {
 }
 
 :root {
-  --primary: #0d7680;
-  --secondary: #f2dfce;
-  --lace: #fff1e0;
-  --floral: #fff9f5;
-  --dark: #111;
+  --bg: #eee1e0;
+  --light: #fff9f5;
+  --grey: #888;
+  --dark: #333;
+}
+
+.logo {
+  font-family: 'Foldit', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  background-color: var(--light);
+  
 }
