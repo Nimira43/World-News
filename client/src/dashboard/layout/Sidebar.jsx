@@ -21,8 +21,8 @@ const Sidebar = () => {
               'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
             `}
           >
-            <span><LuLayoutDashboard /></span>
-            <span>Dashboard</span>
+            <span className='text-18px'><LuLayoutDashboard /></span>
+            <span className='text-18px'>Dashboard</span>
           </Link>
         </li>
       </ul>
