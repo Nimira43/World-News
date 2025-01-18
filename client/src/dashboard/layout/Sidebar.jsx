@@ -1,5 +1,8 @@
 import { Link, useLocation } from 'react-router-dom'
 import { LuLayoutDashboard } from 'react-icons/lu'
+import { TiNews } from 'react-icons/ti'
+import { TbPencilPlus } from 'react-icons/tb'
+import { BsPencilSquare } from 'react-icons/bs'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
@@ -23,6 +26,45 @@ const Sidebar = () => {
           >
             <span className='text-18px'><LuLayoutDashboard /></span>
             <span className='text-18px'>Dashboard</span>
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to='/dashboard/news' 
+            className={`
+              px-3 ${pathname === '/dashboard/news' ?
+              'bg-[#333] text-[#fffaf0]' :
+              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+            `}
+          >
+            <span className='text-18px'><TiNews /></span>
+            <span className='text-18px'>News</span>
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to='/dashboard/writer/add' 
+            className={`
+              px-3 ${pathname === '/dashboard/writer/add' ?
+              'bg-[#333] text-[#fffaf0]' :
+              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+            `}
+          >
+            <span className='text-18px'><TbPencilPlus /></span>
+            <span className='text-18px'>Add Journalist</span>
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to='/dashboard/writers' 
+            className={`
+              px-3 ${pathname === '/dashboard/writers' ?
+              'bg-[#333] text-[#fffaf0]' :
+              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+            `}
+          >
+            <span className='text-18px'><BsPencilSquare /></span>
+            <span className='text-18px'>Journalists</span>
           </Link>
         </li>
       </ul>
