@@ -3,6 +3,7 @@ import { LuLayoutDashboard } from 'react-icons/lu'
 import { TiNews } from 'react-icons/ti'
 import { TbPencilPlus } from 'react-icons/tb'
 import { BsPencilSquare } from 'react-icons/bs'
+import { AiTwotoneProfile } from 'react-icons/ai'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
@@ -65,6 +66,19 @@ const Sidebar = () => {
           >
             <span className='text-18px'><BsPencilSquare /></span>
             <span className='text-18px'>Journalists</span>
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to='/dashboard/profile' 
+            className={`
+              px-3 ${pathname === '/dashboard/profile' ?
+              'bg-[#333] text-[#fffaf0]' :
+              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+            `}
+          >
+            <span className='text-18px'><AiTwotoneProfile /></span>
+            <span className='text-18px'>Profile</span>
           </Link>
         </li>
       </ul>

@@ -9,7 +9,7 @@ const Header = () => {
           <div className='flex gap-x-2'>
             <div className='flex flex-col justify-center items-end'>
               <span className='font-semibold text-[#ff4500]'>John Smith</span>
-              <span>Administrator</span>
+              <span>Admin</span>
             </div>
             <img className='10 h-10 rounded-full border-2 border-[#888]' src={User} alt='User' />
           </div>
