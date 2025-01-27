@@ -9,12 +9,13 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<Login /> }/>
-        <Route path='/dashboard' element={<ProtectDashboard />}>
-        <Route path='' element={<MainLayout />}/>
-          <Route path='' element={<Navigate to='/dashboard/admin' />}>
-            <Route path='admin' element={<AdminIndex />}/>
+        <Route path='/login' element={<Login/>} />
+        <Route path='/dashboard' element={<ProtectDashboard/>} >
+          <Route path='' element={<MainLayout/>} >
+            <Route path='' element={<Navigate to='/dashboard/admin'/>} />
+            <Route path='admin' element={<AdminIndex />} />
           </Route>
+          
         </Route>
       </Routes>
       
