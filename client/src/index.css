@@ -10,14 +10,9 @@ body {
   font-weight: 300;
 }
 
-:root {
-  --grey: #888;
-  --dark: #333;
-}
-
 .logo {
   font-family: 'Sriracha', sans-serif;
   font-size: 30px;  
-  background-color: var(--light);
-  color: #b41818;
+  /* background-color: #fff; */
+  
 }

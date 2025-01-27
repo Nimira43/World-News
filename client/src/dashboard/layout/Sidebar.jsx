@@ -9,7 +9,7 @@ const Sidebar = () => {
   const { pathname } = useLocation()
 
   return (
-    <div className='w-[250px] h-screen fixed left-0 top-0 bg-[#ededed]'>
+    <div className='w-[250px] h-screen fixed left-0 top-0 bg-grey-light'>
       <div className='h-[70px] flex justify-center items-center'>
         <Link to='/'>
           <span className='logo w-[190px] h-[35px]'>World News</span>
@@ -21,8 +21,8 @@ const Sidebar = () => {
             to='/dashboard/admin' 
             className={`
               px-3 ${pathname === '/dashboard/admin' ?
-              'bg-[#333] text-[#fffaf0]' :
-              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+              'bg-grey-dark text-light' :
+              'bg-light text-grey-bg-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
             <span className='text-18px'><LuLayoutDashboard /></span>
@@ -34,8 +34,8 @@ const Sidebar = () => {
             to='/dashboard/news' 
             className={`
               px-3 ${pathname === '/dashboard/news' ?
-              'bg-[#333] text-[#fffaf0]' :
-              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+              'bg-grey-dark text-light' :
+              'bg-light text-grey-bg-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
             <span className='text-18px'><TiNews /></span>
@@ -47,8 +47,8 @@ const Sidebar = () => {
             to='/dashboard/writer/add' 
             className={`
               px-3 ${pathname === '/dashboard/writer/add' ?
-              'bg-[#333] text-[#fffaf0]' :
-              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+              'bg-grey-dark text-light' :
+              'bg-light text-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
             <span className='text-18px'><TbPencilPlus /></span>
@@ -60,8 +60,8 @@ const Sidebar = () => {
             to='/dashboard/writers' 
             className={`
               px-3 ${pathname === '/dashboard/writers' ?
-              'bg-[#333] text-[#fffaf0]' :
-              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+              'bg-grey-dark text-light' :
+              'bg-light text-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
             <span className='text-18px'><BsPencilSquare /></span>
@@ -73,8 +73,8 @@ const Sidebar = () => {
             to='/dashboard/profile' 
             className={`
               px-3 ${pathname === '/dashboard/profile' ?
-              'bg-[#333] text-[#fffaf0]' :
-              'bg-[#fffaf0] text-[#333]'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-[#ff4500] hover:text-[#fffaf0] 
+              'bg-grey-dark text-light' :
+              'bg-light text-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
             <span className='text-18px'><AiTwotoneProfile /></span>
