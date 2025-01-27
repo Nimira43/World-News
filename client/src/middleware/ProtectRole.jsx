@@ -1,7 +1,7 @@
 const ProtectRole = () => {
   return (
     <div>
-      
+      Protect Role
     </div>
   )
 }
