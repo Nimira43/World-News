@@ -6,7 +6,7 @@ const ProtectDashboard = () => {
     role: 'admin'
   }
 
-  if (userInfo) {
+  if (!userInfo) {
     return <Outlet/>
   } else {
     return <Navigate to='/login' />
