@@ -29,7 +29,7 @@ function App() {
                 element={<Navigate to='/dashboard/admin' />}
               />
               <Route
-                path='/unable-access'
+                path='unable-access'
                 element={<Unable />}
               />
               <Route

@@ -1,3 +1,4 @@
+
 import { Navigate, Outlet } from "react-router-dom"
 
 const ProtectRole = ({role}) => {
@@ -9,7 +10,7 @@ const ProtectRole = ({role}) => {
   if (userInfo.role === role) {
     return <Outlet />
   } else {
-    return <Navigate />
+    return <Navigate to='/dashboard/unable-access' />
   }
 }
 
