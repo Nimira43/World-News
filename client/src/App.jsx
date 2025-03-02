@@ -22,10 +22,12 @@ function App() {
               path=''
               element={<MainLayout />}
             >
+              
               <Route
                 path=''
                 element={<Navigate to='/dashboard/admin' />}
               />
+
               <Route
                 path=''
                 element={<ProtectRole role='admin' />}
@@ -34,8 +36,10 @@ function App() {
                   path='admin'
                   element={<AdminIndex />}
                 />
-              </Route>     
+              </Route>
+              
             </Route>
+          
           </Route>
         </Routes>
       </BrowserRouter> 
