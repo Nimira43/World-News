@@ -7,6 +7,8 @@ import ProtectRole from './middleware/ProtectRole'
 import Unable from './dashboard/pages/Unable'
 import Profile from './dashboard/pages/Profile'
 import News from './dashboard/pages/News'
+import Writers from './dashboard/pages/Writers'
+import AddWriter from './dashboard/pages/AddWriter'
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path='news' element={<News />} />
             <Route path='' element={<ProtectRole role='admin' />} >
               <Route path='admin' element={<AdminIndex />} />
+              <Route path='writer/add' element={<AddWriter />} />
+              <Route path='writers' element={<Writers />} />
             </Route>
           </Route>
         </Route>

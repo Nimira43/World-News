@@ -1,4 +1,4 @@
-const Writer = () => {
+const Writers = () => {
   return (
     <div>
       Add Writer
@@ -6,5 +6,5 @@ const Writer = () => {
   )
 }
 
-export default Writer
+export default Writers
 0
