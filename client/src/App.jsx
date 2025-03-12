@@ -8,46 +8,44 @@ import Unable from './dashboard/pages/Unable'
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path='/login'
+          element={<Login />}
+        />
+        <Route
+          path='/dashboard'
+          element={<ProtectDashboard />}
+        >
           <Route
-            path='/login'
-            element={<Login />}
-          />
-          <Route
-            path='/dashboard'
-            element={<ProtectDashboard />}
+            path=''
+            element={<MainLayout />}
           >
+            
             <Route
               path=''
-              element={<MainLayout />}
+              element={<Navigate to='/dashboard/admin' />}
+            />
+            <Route
+              path='unable-access'
+              element={<Unable />}
+            />
+            <Route
+              path=''
+              element={<ProtectRole role='admin' />}
             >
-              
               <Route
-                path=''
-                element={<Navigate to='/dashboard/admin' />}
+                path='admin'
+                element={<AdminIndex />}
               />
-              <Route
-                path='unable-access'
-                element={<Unable />}
-              />
-              <Route
-                path=''
-                element={<ProtectRole role='admin' />}
-              >
-                <Route
-                  path='admin'
-                  element={<AdminIndex />}
-                />
-              </Route>
-              
             </Route>
-          
+            
           </Route>
-        </Routes>
-      </BrowserRouter> 
-    </div>
+        
+        </Route>
+      </Routes>
+    </BrowserRouter>     
   )
 }
 
