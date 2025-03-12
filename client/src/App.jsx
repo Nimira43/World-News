@@ -10,39 +10,17 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path='/login'
-          element={<Login />}
-        />
-        <Route
-          path='/dashboard'
-          element={<ProtectDashboard />}
-        >
-          <Route
-            path=''
-            element={<MainLayout />}
-          >
-            
-            <Route
-              path=''
-              element={<Navigate to='/dashboard/admin' />}
-            />
-            <Route
-              path='unable-access'
-              element={<Unable />}
-            />
-            <Route
-              path=''
-              element={<ProtectRole role='admin' />}
-            >
-              <Route
-                path='admin'
-                element={<AdminIndex />}
-              />
+        <Route path='/login' element={<Login />} />
+        <Route path='/dashboard' element={<ProtectDashboard />} >
+          <Route path='' element={<MainLayout />} >
+            <Route path='' element={<Navigate to='/dashboard/admin' />} />
+            <Route path='unable-access' element={<Unable />} />
+            <Route path='unable-access' element={<Unable />} />
+            <Route path='unable-access' element={<Unable />} />
+            <Route path='' element={<ProtectRole role='admin' />} >
+              <Route path='admin' element={<AdminIndex />} />
             </Route>
-            
           </Route>
-        
         </Route>
       </Routes>
     </BrowserRouter>     
