@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import NewsContent from '../components/NewsContent'
 
 const News = () => {
 
@@ -20,6 +21,7 @@ const News = () => {
             </Link>
         }
       </div>
+      <NewsContent />
     </div>
   )
 }
