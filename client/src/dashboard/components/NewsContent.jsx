@@ -1,3 +1,5 @@
+import profile from '../../assets/user.png'
+
 const NewsContent = () => {
   return (
     <div className='bg-light min-h-screen p-6'>
@@ -30,7 +32,18 @@ const NewsContent = () => {
                 key={index}
                 className='border-t'
               >
-                <td className='py-4 px-6'></td>
+                <td className='py-4 px-6'>1</td>
+                <td className='py-4 px-6'>News Story</td>
+                <td className='py-4 px-6'>
+                  <img
+                    className='h-10 w-10 rounded-full object-cover'
+                    src={profile}
+                    alt="news image"
+                  />
+                </td>
+                <td className='py-4 px-6'>News Category</td>
+                <td className='py-4 px-6'>Description</td>
+                <td className='py-4 px-6'>Date</td>
               </tr>
             ))
             }
