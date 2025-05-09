@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import profile from '../../assets/user.png'
 
 const NewsContent = () => {
@@ -43,7 +44,17 @@ const NewsContent = () => {
                 </td>
                 <td className='py-4 px-6'>News Category</td>
                 <td className='py-4 px-6'>Description</td>
-                <td className='py-4 px-6'>Date</td>
+                <td className='py-4 px-6'>10/05/2025</td>
+                <td className='py-4 px-6'>
+                  <span className='px-3 py-1 bg-green-500 text-light rounded-full text-xs font-medium'>Active</span>
+                </td>
+                <td className='py-4 px-6'>
+                  <div className='flex gap-3'>
+                    <Link>
+                      
+                    </Link>
+                  </div>
+                </td>
               </tr>
             ))
             }
