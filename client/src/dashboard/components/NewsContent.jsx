@@ -78,10 +78,10 @@ const NewsContent = () => {
             id="category"
             className='px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark'
           >
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
           </select>
         </div>
       </div>
