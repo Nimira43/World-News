@@ -78,7 +78,10 @@ const NewsContent = () => {
             id="category"
             className='px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark'
           >
-
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
           </select>
         </div>
       </div>
