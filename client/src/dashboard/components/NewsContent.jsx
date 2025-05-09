@@ -70,6 +70,11 @@ const NewsContent = () => {
           </tbody>
         </table>
       </div>
+      <div className='flex justify-center items-center py-6'>
+        <div className='flex items-center gap-4'>
+          
+        </div>
+      </div>
     </div>
   )
 }
