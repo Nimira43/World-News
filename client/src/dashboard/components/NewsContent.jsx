@@ -17,7 +17,7 @@ const NewsContent = () => {
         <input type='text' placeholder='Search' className='w-full px-4 py-4 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10' />
       </div>
       <div className='overflow-x-auto'>
-        <table className='w-full table-auto bg-light shadow-lg rounded-lg overflow-hidden'>
+        <table className='w-full table-auto bg-light shadow-lg rounded-md overflow-hidden'>
           <thead className='bg-grey-light text-primary uppercase text-sm'>
             <tr>
               <th className='py-4 px-6 text-left'>No</th>
@@ -49,7 +49,7 @@ const NewsContent = () => {
                 <td className='py-4 px-6'>Description</td>
                 <td className='py-4 px-6'>10/05/2025</td>
                 <td className='py-4 px-6'>
-                  <span className='px-3 py-1 bg-green-500 text-light rounded-full text-xs font-medium'>Active</span>
+                  <span className='px-3 py-1 bg-green-500 text-light rounded-md text-xs font-medium uppercase'>Active</span>
                 </td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
