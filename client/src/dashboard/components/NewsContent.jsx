@@ -53,13 +53,13 @@ const NewsContent = () => {
                 </td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
-                    <Link to='#' className='p-2 bg-blue-500 text-light rounded-full hover:bg-blue-700'>
+                    <Link to='#' className='p-2 bg-grey-dark text-light rounded-full hover:bg-primary'>
                       <IoEyeOutline />
                     </Link>
-                    <Link to='#' className='p-2 bg-yellow-500 text-light rounded-full hover:bg-yellow-700'>
+                    <Link to='#' className='p-2 bg-grey-dark text-light rounded-full hover:bg-primary'>
                       <FiEdit2 />
                     </Link>
-                    <Link to='#' className='p-2 bg-red-500 text-light rounded-full hover:bg-red-700'>
+                    <Link to='#' className='p-2 bg-grey-dark text-light rounded-full hover:bg-primary'>
                       <GoTrash />
                     </Link>
                   </div>
@@ -72,7 +72,14 @@ const NewsContent = () => {
       </div>
       <div className='flex justify-center items-center py-6'>
         <div className='flex items-center gap-4'>
-          
+          <label className='text-sm font-medium'>News Per Page</label>
+          <select
+            name="category"
+            id="category"
+            className='px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark'
+          >
+
+          </select>
         </div>
       </div>
     </div>
