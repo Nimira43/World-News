@@ -3,6 +3,7 @@ import profile from '../../assets/user.png'
 import { IoEyeOutline } from 'react-icons/io5'
 import { FiEdit2 } from 'react-icons/fi'
 import { GoTrash } from 'react-icons/go'
+import { AiOutlineCaretLeft, AiOutlineCaretRight } from 'react-icons/ai'
 
 const NewsContent = () => {
   return (
@@ -70,7 +71,7 @@ const NewsContent = () => {
           </tbody>
         </table>
       </div>
-      <div className='flex justify-center items-center py-6'>
+      <div className='flex justify-between items-center py-6'>
         <div className='flex items-center gap-4'>
           <label className='text-sm font-medium'>News Per Page</label>
           <select
@@ -83,6 +84,13 @@ const NewsContent = () => {
             <option value="15">15</option>
             <option value="20">20</option>
           </select>
+        </div>
+        <div className='flex items-center gap-4 text-sm text-grey-dark'>
+          <span>5 of 15</span>
+          <div className='flex gap-2'>
+            <AiOutlineCaretLeft className='w-6 h-6 text-grey-dark cursor-pointer hover:text-primary'/>
+            <AiOutlineCaretRight className='w-6 h-6 text-grey-dark cursor-pointer hover:text-primary'/>
+          </div>
         </div>
       </div>
     </div>
