@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
 import profile from '../../assets/user.png'
+import { IoEyeOutline } from 'react-icons/io5'
+import { FiEdit2 } from 'react-icons/fi'
+import { GoTrash } from 'react-icons/go'
 
 const NewsContent = () => {
   return (
@@ -50,8 +53,14 @@ const NewsContent = () => {
                 </td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
-                    <Link>
-                      
+                    <Link to='#' className='p-2 bg-blue-500 text-light rounded-full hover:bg-blue-700'>
+                      <IoEyeOutline />
+                    </Link>
+                    <Link to='#' className='p-2 bg-yellow-500 text-light rounded-full hover:bg-yellow-700'>
+                      <FiEdit2 />
+                    </Link>
+                    <Link to='#' className='p-2 bg-red-500 text-light rounded-full hover:bg-red-700'>
+                      <GoTrash />
                     </Link>
                   </div>
                 </td>
