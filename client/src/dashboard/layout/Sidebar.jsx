@@ -22,7 +22,7 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/admin' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-bg-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
             <span className='text-18px'><LuLayoutDashboard /></span>
@@ -35,7 +35,7 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/news' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-bg-grey-dark'} py-2 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} py-2 w-full rounded-lg flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
             <span className='text-18px'><TiNews /></span>

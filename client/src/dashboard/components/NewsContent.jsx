@@ -24,7 +24,17 @@ const NewsContent = () => {
               <th className='py-4 px-6 text-left'>Action</th>
             </tr>
           </thead>
-
+          <tbody className='bg-grey-light'>
+            {[1, 2, 3].map((item, index) => (
+              <tr
+                key={index}
+                className='border-t'
+              >
+                <td className='py-4 px-6'></td>
+              </tr>
+            ))
+            }
+          </tbody>
         </table>
       </div>
     </div>
