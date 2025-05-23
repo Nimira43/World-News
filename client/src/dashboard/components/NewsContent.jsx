@@ -50,7 +50,7 @@ const NewsContent = () => {
                 <td className='py-4 px-6'>Description</td>
                 <td className='py-4 px-6'>10/05/2025</td>
                 <td className='py-4 px-6'>
-                  <span className='px-3 py-1 bg-green-500 text-light rounded-md text-xs font-medium uppercase'>Active</span>
+                  <span className='px-3 py-1 bg-green-theme text-light rounded-md text-xs font-medium uppercase'>Active</span>
                 </td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
