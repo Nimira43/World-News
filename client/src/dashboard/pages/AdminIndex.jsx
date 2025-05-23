@@ -19,7 +19,7 @@ const AdminIndex = () => {
               {start.value}
             </span>
             <span
-              className='text-md font-normal text-grey-dark'
+              className='text-md font-normal text-grey-dark uppercase'
             >
               {start.title}
             </span>
