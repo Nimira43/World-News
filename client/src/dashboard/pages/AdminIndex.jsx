@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const AdminIndex = () => {
   return (
     <div className='mt-6'>
@@ -26,7 +28,16 @@ const AdminIndex = () => {
           </div>
         ))}
       </div>
-      
+      <div className='bg-light p-6 mt-8'>
+        <div className='flex justify-between items-center pb-4'>
+          <h2 className='text-dark font-medium text-xl uppercase'>Recent News</h2>
+          <Link 
+            to='/news'
+            className='text-dark'
+          >
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }

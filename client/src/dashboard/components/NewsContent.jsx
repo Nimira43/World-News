@@ -31,7 +31,7 @@ const NewsContent = () => {
               <th className='py-4 px-6 text-left'>Action</th>
             </tr>
           </thead>
-          <tbody className='bg-grey-light'>
+          <tbody className='bg-grey-light text-dark'>
             {[1, 2, 3].map((item, index) => (
               <tr
                 key={index}
