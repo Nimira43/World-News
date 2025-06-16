@@ -50,17 +50,17 @@ const NewsContent = () => {
                 <td className='py-4 px-6'>Description</td>
                 <td className='py-4 px-6'>10/05/2025</td>
                 <td className='py-4 px-6'>
-                  <span className='px-3 py-1 bg-green-theme text-light rounded-md text-xs font-medium uppercase'>Active</span>
+                  <span className='px-3 py-1 bg-primary text-light rounded-md text-xs font-medium uppercase'>Active</span>
                 </td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
-                    <Link to='#' className='p-2 bg-grey-light-extra text-green-theme rounded-full hover:bg-primary-light'>
+                    <Link to='#' className='p-2 bg-grey-light-extra text-primary rounded-full hover:bg-primary-light'>
                       <IoEyeOutline />
                     </Link>
-                    <Link to='#' className='p-2 bg-grey-light-extra text-orange-theme rounded-full hover:bg-primary-light'>
+                    <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
                       <FiEdit2 />
                     </Link>
-                    <Link to='#' className='p-2 bg-grey-light-extra text-red-theme rounded-full hover:bg-primary-light'>
+                    <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
                       <GoTrash />
                     </Link>
                   </div>
