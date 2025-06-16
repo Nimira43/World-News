@@ -14,12 +14,7 @@ export default {
         'grey-light-extra': '#eee',
         'grey-light': '#dedede',
         'grey-medium': '#888',
-        'grey-dark': '#333',
-        'red-theme': '#f13a3a',    
-        'blue-theme': '#5584fc',
-        'green-theme': '#2fc32f',      
-        'purple-theme': '#f266f2',    
-        'orange-theme': '#fcae1d',    
+        'grey-dark': '#333'
       },
     },
   },
