@@ -1,4 +1,7 @@
-import { Link } from "react-router-dom"
+import { FiEdit2 } from 'react-icons/fi'
+import { GoTrash } from 'react-icons/go'
+import { IoEyeOutline } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 const AdminIndex = () => {
   return (
@@ -30,12 +33,66 @@ const AdminIndex = () => {
       </div>
       <div className='bg-light p-6 mt-8'>
         <div className='flex justify-between items-center pb-4'>
-          <h2 className='text-dark font-medium text-xl uppercase'>Recent News</h2>
+          <h2 className='text-grey-dark font-medium text-xl uppercase'>Recent News</h2>
           <Link 
             to='/news'
-            className='text-dark'
+            className='text-grey-dark hover:text-primary font-normal uppercase'
           >
+            View All
           </Link>
+        </div>
+        <div className='overflow-x-auto mt-6'>
+          <table className='w-full table-auto bg-light shadow-lg rounded-md overflow-hidden'>
+            <thead className='bg-grey-light text-primary uppercase text-sm'>
+              <tr>
+                <th className='py-4 px-6 text-left'>No</th>
+                <th className='py-4 px-6 text-left'>Title</th>
+                <th className='py-4 px-6 text-left'>Image</th>
+                <th className='py-4 px-6 text-left'>Category</th>
+                <th className='py-4 px-6 text-left'>Description</th>
+                <th className='py-4 px-6 text-left'>Date</th>
+                <th className='py-4 px-6 text-left'>Status</th>
+                <th className='py-4 px-6 text-left'>Action</th>
+              </tr>
+            </thead>
+            <tbody className='bg-grey-light text-dark'>
+              {[1, 2, 3].map((item, index) => (
+                <tr
+                  key={index}
+                  className='border-t'
+                >
+                  <td className='py-4 px-6'>1</td>
+                  <td className='py-4 px-6'>News Story</td>
+                  <td className='py-4 px-6'>
+                    <img
+                      className='h-10 w-10 rounded-full object-cover'
+                      src={profile}
+                      alt='news image'
+                    />
+                  </td>
+                  <td className='py-4 px-6'>News Category</td>
+                  <td className='py-4 px-6'>Description</td>
+                  <td className='py-4 px-6'>10/05/2025</td>
+                  <td className='py-4 px-6'>
+                    <span className='px-3 py-1 bg-primary text-light rounded-md text-xs font-medium uppercase'>Active</span>
+                  </td>
+                  <td className='py-4 px-6'>
+                    <div className='flex gap-3'>
+                      <Link to='#' className='p-2 bg-grey-light-extra text-primary rounded-full hover:bg-primary-light'>
+                        <IoEyeOutline />
+                      </Link>
+                      <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
+                        <FiEdit2 />
+                      </Link>
+                      <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
+                        <GoTrash />
+                      </Link>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
