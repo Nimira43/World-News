@@ -1,4 +1,4 @@
-import User from '../../assets/user.png'
+import User from '../../assets/user-2.png'
 
 const Header = () => {
   return (

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import profile from '../../assets/user.png'
+import profile from '../../assets/user-2.png'
 import { IoEyeOutline } from 'react-icons/io5'
 import { FiEdit2 } from 'react-icons/fi'
 import { GoTrash } from 'react-icons/go'

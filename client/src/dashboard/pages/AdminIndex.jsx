@@ -1,7 +1,6 @@
-import { FiEdit2 } from 'react-icons/fi'
-import { GoTrash } from 'react-icons/go'
 import { IoEyeOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
+import news from '../../assets/user-1.png'
 
 const AdminIndex = () => {
   return (
@@ -66,7 +65,7 @@ const AdminIndex = () => {
                   <td className='py-4 px-6'>
                     <img
                       className='h-10 w-10 rounded-full object-cover'
-                      src={profile}
+                      src={news}
                       alt='news image'
                     />
                   </td>
@@ -80,12 +79,6 @@ const AdminIndex = () => {
                     <div className='flex gap-3'>
                       <Link to='#' className='p-2 bg-grey-light-extra text-primary rounded-full hover:bg-primary-light'>
                         <IoEyeOutline />
-                      </Link>
-                      <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
-                        <FiEdit2 />
-                      </Link>
-                      <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
-                        <GoTrash />
                       </Link>
                     </div>
                   </td>
