@@ -13,7 +13,24 @@ const AddWriter = () => {
         </Link>
       </div>
 
-      
+      <div className='p-4'>
+        <form>
+          <div className=' grid grid-cols-2 gap-x-8 mb-3'>
+            <label 
+              htmlFor='name' 
+              className='text-grey-dark uppercase text-md'
+            >
+              Name  
+            </label>
+            <input 
+              type='text' 
+              name='name'
+              required
+              className='px3 py-2 rounded-md'
+            />
+          </div>
+        </form>
+      </div>
     </div>
   )
 }
