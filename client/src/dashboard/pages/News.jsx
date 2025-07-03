@@ -14,7 +14,7 @@ const News = () => {
         {
           userInfo.role !== 'admin' &&
             <Link
-              className='px-4 py-[8px] bg-grey-dark rounded-lg text-light hover:bg-primary'
+              className='text-grey-dark hover:text-primary font-medium uppercase'
               to='/dashboard/news/create' 
             >
               Create News Story

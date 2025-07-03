@@ -35,7 +35,7 @@ const AdminIndex = () => {
           <h2 className='text-grey-dark font-medium text-xl uppercase'>Recent News</h2>
           <Link 
             to='/news'
-            className='text-grey-dark hover:text-primary font-normal uppercase'
+            className='text-grey-dark hover:text-primary font-medium uppercase'
           >
             View All
           </Link>
