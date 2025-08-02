@@ -42,17 +42,17 @@ const AddWriter = () => {
                 id='name' 
                 name='category'
                 required 
-                className='w-48 px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10 text-left'
+                className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10 text-left'
               >
                 <option 
                 value=''>Select Status</option>
-                <option value='pending'>International</option>
-                <option value='active'>Business</option>
-                <option value='deactive'>Health</option>
-                <option value='deactive'>Entertainment</option>
-                <option value='deactive'>Sport</option>
-                <option value='deactive'>Technology</option>
-                <option value='deactive'>Travel</option>
+                <option value='International'>International</option>
+                <option value='Sport'>Sport</option>
+                <option value='Business'>Business</option>
+                <option value='Technology'>Technology</option>
+                <option value='Health'>Health</option>
+                <option value='Entertainment'>Entertainment</option>
+                <option value='Travel'>Travel</option>
               </select>
             </div>
           </div>
