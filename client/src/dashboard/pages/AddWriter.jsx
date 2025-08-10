@@ -59,7 +59,7 @@ const AddWriter = () => {
           <div className='grid grid-cols-2 gap-x-8 mb-3'>
             <div className='flex flex-col gap-y-2'>
               <label 
-                htmlFor='name' 
+                htmlFor='email' 
                 className='text-grey-dark uppercase text-md'
               >
                 Email  
@@ -74,7 +74,7 @@ const AddWriter = () => {
             </div>
             <div className='flex flex-col gap-y-2'>
               <label 
-                htmlFor='name' 
+                htmlFor='password' 
                 className='text-grey-dark uppercase text-md'
               >
                 Password  
