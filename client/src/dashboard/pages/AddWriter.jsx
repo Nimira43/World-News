@@ -56,6 +56,23 @@ const AddWriter = () => {
               </select>
             </div>
           </div>
+          <div className='grid grid-cols-2 gap-x-8 mb-3'>
+            <div className='flex flex-col gap-y-2'>
+              <label 
+                htmlFor='name' 
+                className='text-grey-dark uppercase text-md'
+              >
+                Email  
+              </label>
+              <input
+                id='email' 
+                type='text' 
+                name='email'
+                required
+                className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10' 
+              />
+            </div>
+          </div>
         </form>
       </div>
     </div>
