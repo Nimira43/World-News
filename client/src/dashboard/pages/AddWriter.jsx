@@ -89,6 +89,13 @@ const AddWriter = () => {
             </div>
           </div>
         </form>
+        <div className='mt-4'>
+          <button
+            className='px-3 py-[6px] bg-grey-dark hover:bg-primary'
+          >
+
+          </button>
+        </div>
       </div>
     </div>
   )
