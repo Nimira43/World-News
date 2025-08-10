@@ -66,8 +66,23 @@ const AddWriter = () => {
               </label>
               <input
                 id='email' 
-                type='text' 
+                type='email' 
                 name='email'
+                required
+                className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10' 
+              />
+            </div>
+            <div className='flex flex-col gap-y-2'>
+              <label 
+                htmlFor='name' 
+                className='text-grey-dark uppercase text-md'
+              >
+                Password  
+              </label>
+              <input
+                id='password' 
+                type='password' 
+                name='password'
                 required
                 className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10' 
               />
