@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 const AddWriter = () => {
   const [loader, setLoader] = useState(false)
 
-
   return (
     <div className='bg-light rounded-md'>
       <div className='flex justify-between p-4'>
@@ -94,6 +93,7 @@ const AddWriter = () => {
           </div>
           <div className='mt-4'>
             <button
+            disabled={loader}
               className='px-3 py-[6px] bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
             >
               Add
