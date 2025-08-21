@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const AddWriter = () => {
+  const [loader, setLoader] = useState(false)
+
+
   return (
     <div className='bg-light rounded-md'>
       <div className='flex justify-between p-4'>
