@@ -23,7 +23,7 @@ function App() {
             <Route path='news' element={<News />} />
             <Route path='' element={<ProtectRole role='admin' />} >
               <Route path='admin' element={<AdminIndex />} />
-              <Route path='writer/add' element={<AddWriter />} />
+              <Route path='writers/add' element={<AddWriter />} />
               <Route path='writers' element={<Writers />} />
             </Route>
           </Route>

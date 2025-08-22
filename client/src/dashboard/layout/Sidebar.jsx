@@ -44,9 +44,9 @@ const Sidebar = () => {
         </li>
         <li>
           <Link 
-            to='/dashboard/writer/add' 
+            to='/dashboard/writers/add' 
             className={`
-              px-3 ${pathname === '/dashboard/writer/add' ?
+              px-3 ${pathname === '/dashboard/writers/add' ?
               'bg-grey-dark text-light' :
               'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}

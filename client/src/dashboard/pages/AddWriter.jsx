@@ -10,7 +10,7 @@ const AddWriter = () => {
         <h2 className='text-xl font-medium uppercase'> Add Journalist</h2>
         <Link 
           to='/dashboard/writers'
-          className='text-grey-dark hover:text-primary font-medium uppercase'
+          className='hover:text-primary font-medium uppercase'
         >
           Journalists
         </Link>

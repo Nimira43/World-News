@@ -9,7 +9,7 @@ const Writers = () => {
       <div className='flex justify-between px-6 py-4'>
         <h2 className='text-xl font-medium uppercase'> Journalists</h2>
         <Link 
-          to='/dashboard/writers'
+          to='/dashboard/writers/add'
           className='text-grey-dark hover:text-primary font-medium uppercase'
         >
           Add Journalist
