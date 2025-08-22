@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 const Writers = () => {
   return (
-    <div className='bg-light min-h-screen p-6'>
-      <div className='flex justify-between p-4'>
+    <div className='bg-light rounded-md'>
+      <div className='flex justify-between px-6 py-4'>
         <h2 className='text-xl font-medium uppercase'> Journalists</h2>
         <Link 
           to='/dashboard/writers'
