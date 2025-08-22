@@ -28,7 +28,10 @@ const Writers = () => {
                 className='border-t'
               >
                 <td className='py-4 px-6'>1</td>
-                <td className='py-4 px-6'>News Story</td>
+                <td className='py-4 px-6'>Bob Smith</td>
+                
+                <td className='py-4 px-6'>Travel</td>
+                <td className='py-4 px-6'>Writer</td>
                 <td className='py-4 px-6'>
                   <img
                     className='h-10 w-10 rounded-full object-cover'
@@ -36,12 +39,7 @@ const Writers = () => {
                     alt="news image"
                   />
                 </td>
-                <td className='py-4 px-6'>News Category</td>
-                <td className='py-4 px-6'>Description</td>
-                <td className='py-4 px-6'>10/05/2025</td>
-                <td className='py-4 px-6'>
-                  <span className='px-3 py-1 bg-primary text-light rounded-md text-xs font-medium uppercase'>Active</span>
-                </td>
+                <td className='py-4 px-6'>bob@news.com</td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
                     <Link to='#' className='p-2 bg-grey-light-extra text-primary rounded-full hover:bg-primary-light'>
