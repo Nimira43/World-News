@@ -2,6 +2,7 @@ import { FiEdit2 } from 'react-icons/fi'
 import { GoTrash } from 'react-icons/go'
 import { IoEyeOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
+import profile from '../../assets/user-2.png'
 
 const Writers = () => {
   return (
@@ -10,7 +11,7 @@ const Writers = () => {
         <h2 className='text-xl font-medium uppercase'> Journalists</h2>
         <Link 
           to='/dashboard/writers/add'
-          className='text-grey-dark hover:text-primary font-medium uppercase'
+          className='hover:text-primary font-medium uppercase'
         >
           Add Journalist
         </Link>
@@ -42,7 +43,7 @@ const Writers = () => {
                 <td className='py-4 px-6'>
                   <img
                     className='h-10 w-10 rounded-full object-cover'
-                    src='#'
+                    src={profile}
                     alt='news image'
                   />
                 </td>
