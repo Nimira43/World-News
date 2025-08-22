@@ -1,7 +1,7 @@
-import { FiEdit2 } from "react-icons/fi"
-import { GoTrash } from "react-icons/go"
-import { IoEyeOutline } from "react-icons/io5"
-import { Link } from "react-router-dom"
+import { FiEdit2 } from 'react-icons/fi'
+import { GoTrash } from 'react-icons/go'
+import { IoEyeOutline } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 const Writers = () => {
   return (
@@ -43,7 +43,7 @@ const Writers = () => {
                   <img
                     className='h-10 w-10 rounded-full object-cover'
                     src='#'
-                    alt="news image"
+                    alt='news image'
                   />
                 </td>
                 <td className='py-4 px-6'>bob@news.com</td>

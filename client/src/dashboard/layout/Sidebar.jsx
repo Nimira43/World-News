@@ -15,7 +15,7 @@ const Sidebar = () => {
           <span className='logo w-[190px] h-[35px]'>World News</span>
         </Link>
       </div>
-      <ul className="px-3 flex flex-col gap-y-1 font-medium">
+      <ul className='px-3 flex flex-col gap-y-1 font-medium'>
         <li>
           <Link 
             to='/dashboard/admin' 
