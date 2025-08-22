@@ -6,7 +6,15 @@ import { Link } from "react-router-dom"
 const Writers = () => {
   return (
     <div className='bg-light min-h-screen p-6'>
-      
+      <div className='flex justify-between p-4'>
+        <h2 className='text-xl font-medium uppercase'> Journalists</h2>
+        <Link 
+          to='/dashboard/writers'
+          className='text-grey-dark hover:text-primary font-medium uppercase'
+        >
+          Add Journalist
+        </Link>
+      </div>
       <div className='overflow-x-auto'>
         <table className='w-full table-auto bg-light shadow-lg rounded-md overflow-hidden'>
           <thead className='bg-grey-light text-primary uppercase text-sm'>
