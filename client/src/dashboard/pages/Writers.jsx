@@ -13,12 +13,11 @@ const Writers = () => {
           <thead className='bg-grey-light text-primary uppercase text-sm'>
             <tr>
               <th className='py-4 px-6 text-left'>No</th>
-              <th className='py-4 px-6 text-left'>Namee</th>
+              <th className='py-4 px-6 text-left'>Name</th>
               <th className='py-4 px-6 text-left'>Image</th>
-              <th className='py-4 px-6 text-left'>Category</th>
-              <th className='py-4 px-6 text-left'>Description</th>
-              <th className='py-4 px-6 text-left'>Date</th>
-              <th className='py-4 px-6 text-left'>Status</th>
+              <th className='py-4 px-6 text-left'>Role</th>
+              <th className='py-4 px-6 text-left'>Image</th>
+              <th className='py-4 px-6 text-left'>Email</th>
               <th className='py-4 px-6 text-left'>Action</th>
             </tr>
           </thead>
