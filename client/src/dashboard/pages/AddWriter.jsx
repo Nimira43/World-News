@@ -96,7 +96,10 @@ const AddWriter = () => {
             disabled={loader}
               className='px-3 py-[6px] bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
             >
-              Add
+              {loader 
+                ? 'Loading,,,'
+                : 'Add Journalist'  
+              }
             </button>
           </div>
         </form>
