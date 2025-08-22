@@ -1,4 +1,3 @@
-import { AiOutlineCaretLeft, AiOutlineCaretRight } from "react-icons/ai"
 import { FiEdit2 } from "react-icons/fi"
 import { GoTrash } from "react-icons/go"
 import { IoEyeOutline } from "react-icons/io5"
