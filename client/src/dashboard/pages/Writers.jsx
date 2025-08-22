@@ -59,28 +59,6 @@ const Writers = () => {
           </tbody>
         </table>
       </div>
-      <div className='flex justify-between items-center py-6'>
-        <div className='flex items-center gap-4'>
-          <label className='text-sm font-medium'>News Per Page</label>
-          <select
-            name="category"
-            id="category"
-            className='px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark'
-          >
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-          </select>
-        </div>
-        <div className='flex items-center gap-4 text-sm text-grey-dark'>
-          <span>5 of 15</span>
-          <div className='flex gap-2'>
-            <AiOutlineCaretLeft className='w-6 h-6 text-grey-dark cursor-pointer hover:text-primary'/>
-            <AiOutlineCaretRight className='w-6 h-6 text-grey-dark cursor-pointer hover:text-primary'/>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
