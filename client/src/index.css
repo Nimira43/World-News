@@ -27,6 +27,6 @@ select::-webkit-scrollbar {
   background: transparent;
 }
 
-a, button {
+a, button, .label {
   transition: all 0.5s ease-in-out;
 }
