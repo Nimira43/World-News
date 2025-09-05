@@ -9,9 +9,8 @@ const Profile = () => {
             htmlFor='img'
             className='w-[150px] h-[150px] flex flex-col justify-center items-center rounded-full bg-light border-2 border-grey-medium text-grey-dark cursor-pointer hover:bg-primary hover:text-light label'
           >
-            <RiImageCircleLine 
-              className='text-4xl'
-            />
+            <RiImageCircleLine className='text-4xl' />
+            <span className='mt-2'>Select Image</span>
           </label>
         </div>
       </div>
