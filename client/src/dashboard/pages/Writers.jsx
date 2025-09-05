@@ -1,6 +1,5 @@
 import { FiEdit2 } from 'react-icons/fi'
 import { GoTrash } from 'react-icons/go'
-import { IoEyeOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import profile from '../../assets/user-2.png'
 
@@ -22,7 +21,7 @@ const Writers = () => {
             <tr>
               <th className='py-4 px-6 text-left'>No</th>
               <th className='py-4 px-6 text-left'>Name</th>
-              <th className='py-4 px-6 text-left'>Image</th>
+              <th className='py-4 px-6 text-left'>Category</th>
               <th className='py-4 px-6 text-left'>Role</th>
               <th className='py-4 px-6 text-left'>Image</th>
               <th className='py-4 px-6 text-left'>Email</th>
@@ -50,9 +49,6 @@ const Writers = () => {
                 <td className='py-4 px-6'>bob@news.com</td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
-                    <Link to='#' className='p-2 bg-grey-light-extra text-primary rounded-full hover:bg-primary-light'>
-                      <IoEyeOutline />
-                    </Link>
                     <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
                       <FiEdit2 />
                     </Link>
