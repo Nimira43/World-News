@@ -15,7 +15,7 @@ const AdminIndex = () => {
         ].map((start, i) => (
           <div
             key={i}
-            className='p-8 bg-grey-light rounded-md shadow-md flex flex-col items-center gap-2' 
+            className='p-8 bg-grey-light-extra rounded-md shadow-md flex flex-col items-center gap-2' 
           >
             <span
               className='text-4xl font-medium text-primary'
@@ -41,8 +41,8 @@ const AdminIndex = () => {
           </Link>
         </div>
         <div className='overflow-x-auto mt-6'>
-          <table className='w-full table-auto bg-light shadow-lg rounded-md overflow-hidden'>
-            <thead className='bg-grey-light text-primary uppercase text-sm'>
+          <table className='w-full table-auto bg-grey-light-extra shadow-lg rounded-md overflow-hidden'>
+            <thead className='text-primary uppercase text-sm'>
               <tr>
                 <th className='py-4 px-6 text-left'>No</th>
                 <th className='py-4 px-6 text-left'>Title</th>
@@ -54,7 +54,7 @@ const AdminIndex = () => {
                 <th className='py-4 px-6 text-left'>Action</th>
               </tr>
             </thead>
-            <tbody className='bg-grey-light text-dark'>
+            <tbody className='text-dark'>
               {[1, 2, 3].map((item, index) => (
                 <tr
                   key={index}

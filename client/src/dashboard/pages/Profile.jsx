@@ -18,6 +18,11 @@ const Profile = () => {
             />
           </label>
         </div>
+        <div className='ml-6 text-grey-dark flex flex-col space-y-2'>
+          <h3 className='text-xl font-medium'>John Smith</h3>
+          <p className='text-sm font-medium'>Email: <span className='font-normal'>j.smith@world-news.com</span></p>
+          <p className='text-sm font-medium'>Category: <span className='font-normal'>Sport</span></p>
+        </div>
       </div>
     </div>
   )

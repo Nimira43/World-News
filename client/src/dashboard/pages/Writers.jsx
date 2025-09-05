@@ -16,8 +16,8 @@ const Writers = () => {
         </Link>
       </div>
       <div className='overflow-x-auto'>
-        <table className='w-full table-auto bg-light shadow-lg rounded-md overflow-hidden'>
-          <thead className='bg-grey-light text-primary uppercase text-sm'>
+        <table className='w-full table-auto bg-grey-light-extra shadow-lg rounded-md overflow-hidden'>
+          <thead className='text-primary uppercase text-sm'>
             <tr>
               <th className='py-4 px-6 text-left'>No</th>
               <th className='py-4 px-6 text-left'>Name</th>
@@ -28,7 +28,7 @@ const Writers = () => {
               <th className='py-4 px-6 text-left'>Action</th>
             </tr>
           </thead>
-          <tbody className='bg-grey-light text-dark'>
+          <tbody className='text-dark'>
             {[1, 2, 3, 4].map((item, index) => (
               <tr
                 key={index}
