@@ -5,7 +5,7 @@ import profile from '../../assets/user-2.png'
 
 const Writers = () => {
   return (
-    <div className='bg-light rounded-md'>
+    <div>
       <div className='flex justify-between px-6 py-4'>
         <h2 className='text-xl font-medium uppercase'> Journalists</h2>
         <Link 
