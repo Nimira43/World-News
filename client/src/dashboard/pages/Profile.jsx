@@ -63,15 +63,18 @@ const Profile = () => {
               />
             </div>
           </div>
-          <button
-            disabled={loader}
-              className='px-3 py-[6px] bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
+          <div className='mt-6'>
+            <button
+              type='submit'
+              disabled={loader}
+              className='w-full px-4 py-2 font-medium bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
             >
               {loader 
-                ? 'Loading,,,'
-                : 'Add Journalist'  
+                ? 'Submitting,,,'
+                : 'Change Password'  
               }
             </button>
+          </div>
         </form>
       </div>
     </div>

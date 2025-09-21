@@ -94,7 +94,7 @@ const AddWriter = () => {
           <div className='mt-4'>
             <button
             disabled={loader}
-              className='px-3 py-[6px] bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
+              className='px-3 py-[6px] font-medium bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
             >
               {loader 
                 ? 'Loading,,,'
