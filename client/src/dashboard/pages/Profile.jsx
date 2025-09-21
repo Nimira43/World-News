@@ -36,7 +36,13 @@ const Profile = () => {
               >
                 Password
               </label>
-              <input type='text' placeholder='Search' className='px-3 py-2 rounded-md outline-0 bg-light border border-grey-medium focus:border-grey-dark h-10' />
+              <input 
+                type='text' 
+                id='old_password'
+                name='old_password'
+                placeholder='Enter old password' 
+                className='w-full px-3 py-2 mt-2 rounded-md outline-0 bg-light border border-grey-medium focus:border-grey-dark h-10' 
+              />
             </div>
           </div>
         </form>
