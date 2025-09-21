@@ -26,21 +26,36 @@ const Profile = () => {
       </div>
 
       <div className='bg-grey-light-extra p-6 text-grey-dark'>
-        <h2 className='font-medium text-center mb-5'>Change Password</h2>
+        <h2 className='font-medium text-xl text-center mb-5'>Change Password</h2>
         <form>
           <div className='space-y-4'>
             <div>
               <label 
-                htmlFor='old_password'
-                className='block text-md font-medium'
+                htmlFor='current-password'
+                className='block text-sm font-medium'
               >
-                Password
+                Current Password
               </label>
               <input 
                 type='text' 
-                id='old_password'
-                name='old_password'
-                placeholder='Enter old password' 
+                id='current-password'
+                name='current-password'
+                placeholder='Enter current password' 
+                className='w-full px-3 py-2 mt-2 rounded-md outline-0 bg-light border border-grey-medium focus:border-grey-dark h-10' 
+              />
+            </div>
+            <div>
+              <label 
+                htmlFor='new_password'
+                className='block text-sm font-medium'
+              >
+                New Password
+              </label>
+              <input 
+                type='text' 
+                id='new_password'
+                name='new_password'
+                placeholder='Enter new password' 
                 className='w-full px-3 py-2 mt-2 rounded-md outline-0 bg-light border border-grey-medium focus:border-grey-dark h-10' 
               />
             </div>
