@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { RiImageCircleLine } from 'react-icons/ri'
 
 const Profile = () => {
+  const [loader, setLoader] = useState(false)
+
   return (
     <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-2 mt-5'>
       <div className='bg-grey-light-extra p-6 flex items-center rounded-md'>
@@ -60,6 +63,15 @@ const Profile = () => {
               />
             </div>
           </div>
+          <button
+            disabled={loader}
+              className='px-3 py-[6px] bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
+            >
+              {loader 
+                ? 'Loading,,,'
+                : 'Add Journalist'  
+              }
+            </button>
         </form>
       </div>
     </div>
