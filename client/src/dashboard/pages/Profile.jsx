@@ -27,6 +27,19 @@ const Profile = () => {
 
       <div className='bg-grey-light-extra p-6 text-grey-dark'>
         <h2 className='font-medium text-center mb-5'>Change Password</h2>
+        <form>
+          <div className='space-y-4'>
+            <div>
+              <label 
+                htmlFor='old_password'
+                className='block text-md font-medium'
+              >
+                Password
+              </label>
+              input
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   )
