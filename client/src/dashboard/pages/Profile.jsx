@@ -3,7 +3,7 @@ import { RiImageCircleLine } from 'react-icons/ri'
 const Profile = () => {
   return (
     <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-2 mt-5'>
-      <div className='bg-grey-light-extra p-6 flex items-center'>
+      <div className='bg-grey-light-extra p-6 flex items-center rounded-md'>
         <div className='flex-shrink-0'>
           <label 
             htmlFor='img'
@@ -23,6 +23,10 @@ const Profile = () => {
           <p className='text-sm font-medium'>Email: <span className='font-normal'>j.smith@world-news.com</span></p>
           <p className='text-sm font-medium'>Category: <span className='font-normal'>Sport</span></p>
         </div>
+      </div>
+
+      <div className='bg-grey-light-extra p-6 text-grey-dark'>
+        <h2 className='font-medium text-center mb-5'>Change Password</h2>
       </div>
     </div>
   )
