@@ -1,8 +1,6 @@
-import { useState } from 'react'
 import { RiImageCircleLine } from 'react-icons/ri'
 
 const Profile = () => {
-  const [loader, setLoader] = useState(false)
 
   return (
     <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-2 mt-5'>
@@ -40,7 +38,7 @@ const Profile = () => {
                 Current Password
               </label>
               <input 
-                type='text' 
+                type='password' 
                 id='current-password'
                 name='current-password'
                 placeholder='Enter current password' 
@@ -55,7 +53,7 @@ const Profile = () => {
                 New Password
               </label>
               <input 
-                type='text' 
+                type='password' 
                 id='new_password'
                 name='new_password'
                 placeholder='Enter new password' 
@@ -66,13 +64,9 @@ const Profile = () => {
           <div className='mt-6'>
             <button
               type='submit'
-              disabled={loader}
               className='w-full px-4 py-2 font-medium bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
             >
-              {loader 
-                ? 'Submitting,,,'
-                : 'Change Password'  
-              }
+              Change Password
             </button>
           </div>
         </form>
