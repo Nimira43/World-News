@@ -4,6 +4,7 @@ import { TiNews } from 'react-icons/ti'
 import { TbPencilPlus } from 'react-icons/tb'
 import { BsPencilSquare } from 'react-icons/bs'
 import { AiTwotoneProfile } from 'react-icons/ai'
+import { BiLayerPlus } from 'react-icons/bi'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
@@ -44,15 +45,15 @@ const Sidebar = () => {
         </li>
         <li>
           <Link 
-            to='/dashboard/news' 
+            to='/dashboard/news/create' 
             className={`
-              px-3 ${pathname === '/dashboard/news' ?
+              px-3 ${pathname === '/dashboard/news/create' ?
               'bg-grey-dark text-light' :
               'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
             `}
           >
-            <span className='text-18px'><TiNews /></span>
-            <span className='text-18px'>News</span>
+            <span className='text-18px'><BiLayerPlus /></span>
+            <span className='text-18px'>Add News</span>
           </Link>
         </li>
         <li>
