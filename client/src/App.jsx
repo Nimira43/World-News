@@ -26,6 +26,12 @@ function App() {
               <Route path='writers/add' element={<AddWriter />} />
               <Route path='writers' element={<Writers />} />
             </Route>
+            
+            <Route path='' element={<ProtectRole role='writer' />} >
+              <Route path='admin' element={<AdminIndex />} />
+              <Route path='writers/add' element={<AddWriter />} />
+              <Route path='writers' element={<Writers />} />
+            </Route>
           </Route>
         </Route>
       </Routes>
