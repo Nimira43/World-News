@@ -9,6 +9,8 @@ import Profile from './dashboard/pages/Profile'
 import News from './dashboard/pages/News'
 import Writers from './dashboard/pages/Writers'
 import AddWriter from './dashboard/pages/AddWriter'
+import WriterIndex from './dashboard/pages/WriterIndex'
+import CreateNews from './dashboard/pages/CreateNews'
 
 function App() {
   return (
@@ -17,10 +19,13 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/dashboard' element={<ProtectDashboard />} >
           <Route path='' element={<MainLayout />} >
+            
             <Route path='' element={<Navigate to='/dashboard/admin' />} />
             <Route path='unable-access' element={<Unable />} />
+            
             <Route path='profile' element={<Profile />} />
             <Route path='news' element={<News />} />
+            
             <Route path='' element={<ProtectRole role='admin' />} >
               <Route path='admin' element={<AdminIndex />} />
               <Route path='writers/add' element={<AddWriter />} />
@@ -28,9 +33,8 @@ function App() {
             </Route>
             
             <Route path='' element={<ProtectRole role='writer' />} >
-              <Route path='admin' element={<AdminIndex />} />
-              <Route path='writers/add' element={<AddWriter />} />
-              <Route path='writers' element={<Writers />} />
+              <Route path='' element={<WriterIndex />} />
+              <Route path='new/create' element={<CreateNews />} />
             </Route>
           </Route>
         </Route>
