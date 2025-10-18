@@ -44,6 +44,19 @@ const Sidebar = () => {
         </li>
         <li>
           <Link 
+            to='/dashboard/news' 
+            className={`
+              px-3 ${pathname === '/dashboard/news' ?
+              'bg-grey-dark text-light' :
+              'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+            `}
+          >
+            <span className='text-18px'><TiNews /></span>
+            <span className='text-18px'>News</span>
+          </Link>
+        </li>
+        <li>
+          <Link 
             to='/dashboard/writers/add' 
             className={`
               px-3 ${pathname === '/dashboard/writers/add' ?
