@@ -13,6 +13,10 @@ import WriterIndex from './dashboard/pages/WriterIndex'
 import CreateNews from './dashboard/pages/CreateNews'
 
 function App() {
+  const userInfo = {
+    role: 'writer'
+  }
+
   return (
     <BrowserRouter>
       <Routes>
