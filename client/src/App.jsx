@@ -105,7 +105,7 @@ function App() {
               } 
             >
               <Route 
-                path='' 
+                path='writer' 
                 element={
                   <WriterIndex />
                 } 
