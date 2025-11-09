@@ -16,7 +16,7 @@ function App() {
   const userInfo = {
     role: 'writer'
   }
-  <Navigate to='/dashboard/admin' />
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -24,7 +24,15 @@ function App() {
         <Route path='/dashboard' element={<ProtectDashboard />} >
           <Route path='' element={<MainLayout />} >
             
-            <Route path='' element={userInfo} />
+            <Route 
+              path='' 
+              element={
+                userInfo.role === 'admin' 
+                ? <Navigate to='/dashboard/admin' />
+                : <Navigate to='/dashboard/writer' />
+              }    
+            />
+
             <Route path='unable-access' element={<Unable />} />
             
             <Route path='profile' element={<Profile />} />
