@@ -31,7 +31,7 @@ const AddWriter = () => {
                 type='text' 
                 name='name'
                 required
-                className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10' 
+                className='input-field' 
               />
             </div>
             <div className='flex flex-col gap-y-2'>
@@ -45,7 +45,7 @@ const AddWriter = () => {
                 id='name' 
                 name='category'
                 required 
-                className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10 text-left'
+                className='input-field text-left'
               >
                 <option 
                 value=''>Select Status</option>
@@ -72,7 +72,7 @@ const AddWriter = () => {
                 type='email' 
                 name='email'
                 required
-                className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10' 
+                className='input-field' 
               />
             </div>
             <div className='flex flex-col gap-y-2'>
@@ -87,7 +87,7 @@ const AddWriter = () => {
                 type='password' 
                 name='password'
                 required
-                className='px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10' 
+                className='input-field' 
               />
             </div>
           </div>
