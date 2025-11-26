@@ -20,6 +20,7 @@ select {
   appearance: none;       
   -webkit-appearance: none;
   -moz-appearance: none;
+  outline: none;
 }
 
 select::-webkit-scrollbar {
@@ -36,9 +37,20 @@ a, button, .label {
 }
 
 .selector {
-  @apply w-48 px-4 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10;
+  @apply px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark
+}
+.search-bar {
+  @apply w-full px-4 py-4 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10;
 }
 
-.search-bar {
-  @apply w-full px-4 py-4 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10
+.table-wrapper {
+  @apply w-full table-auto bg-grey-light-extra shadow-lg rounded-md overflow-hidden;
+}
+
+.badge {
+  @apply px-3 py-1 bg-primary text-light rounded-md text-xs font-medium uppercase
+}
+
+.icon-hover {
+  @apply p-2 bg-grey-light-extra text-primary rounded-full hover:bg-primary-light
 }

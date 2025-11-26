@@ -11,7 +11,7 @@ const NewsContent = () => {
       <div className='flex items-center gap-4 mb-6'>
         <select 
           name='status' 
-          className='selector'
+          className='selector w-48 h-10'
         >
           <option value=''>Select Status</option>
           <option value='pending'>Pending</option>
@@ -24,7 +24,7 @@ const NewsContent = () => {
         />
       </div>
       <div className='overflow-x-auto'>
-        <table className='w-full table-auto bg-grey-light-extra shadow-lg rounded-md overflow-hidden'>
+        <table className='table-wrapper'>
           <thead className='text-primary uppercase text-sm'>
             <tr>
               <th className='py-4 px-6 text-left'>No</th>
@@ -56,17 +56,19 @@ const NewsContent = () => {
                 <td className='py-4 px-6'>Description</td>
                 <td className='py-4 px-6'>10/05/2025</td>
                 <td className='py-4 px-6'>
-                  <span className='px-3 py-1 bg-primary text-light rounded-md text-xs font-medium uppercase'>Active</span>
+                  <span className='badge'>
+                    Active
+                  </span>
                 </td>
                 <td className='py-4 px-6'>
                   <div className='flex gap-3'>
-                    <Link to='#' className='p-2 bg-grey-light-extra text-primary rounded-full hover:bg-primary-light'>
+                    <Link to='#' className='icon-hover'>
                       <IoEyeOutline />
                     </Link>
-                    <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
+                    <Link to='#' className='icon-hover'>
                       <FiEdit2 />
                     </Link>
-                    <Link to='#' className='p-2 bg-grey-light-extra tra text-primary rounded-full hover:bg-primary-light'>
+                    <Link to='#' className='icon-hover'>
                       <GoTrash />
                     </Link>
                   </div>
