@@ -23,11 +23,15 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/admin' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} py-2 hover:shadow-lg hover:shadow-red-700/20 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} sidebar-link 
             `}
           >
-            <span className='text-18px'><LuLayoutDashboard /></span>
-            <span className='text-18px'>Dashboard</span>
+            <span className='text-18px'>
+              <LuLayoutDashboard />
+              </span>
+            <span className='text-18px'>
+              Dashboard
+            </span>
           </Link>
         </li>
         <li>
@@ -36,11 +40,15 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/news' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} sidebar-link 
             `}
           >
-            <span className='text-18px'><TiNews /></span>
-            <span className='text-18px'>News</span>
+            <span className='text-18px'>
+              <TiNews />
+            </span>
+            <span className='text-18px'>
+              News
+            </span>
           </Link>
         </li>
         <li>
@@ -49,11 +57,15 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/news/create' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} sidebar-link 
             `}
           >
-            <span className='text-18px'><BiLayerPlus /></span>
-            <span className='text-18px'>Add News</span>
+            <span className='text-18px'>
+              <BiLayerPlus />
+            </span>
+            <span className='text-18px'>
+              Add News
+            </span>
           </Link>
         </li>
         <li>
@@ -62,11 +74,15 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/writers/add' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} sidebar-link 
             `}
           >
-            <span className='text-18px'><TbPencilPlus /></span>
-            <span className='text-18px'>Add Journalist</span>
+            <span className='text-18px'>
+              <TbPencilPlus />
+            </span>
+            <span className='text-18px'>
+              Add Journalist
+            </span>
           </Link>
         </li>
         <li>
@@ -75,11 +91,15 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/writers' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} sidebar-link 
             `}
           >
-            <span className='text-18px'><BsPencilSquare /></span>
-            <span className='text-18px'>Journalists</span>
+            <span className='text-18px'>
+              <BsPencilSquare />
+            </span>
+            <span className='text-18px'>
+              Journalists
+            </span>
           </Link>
         </li>
         <li>
@@ -88,11 +108,15 @@ const Sidebar = () => {
             className={`
               px-3 ${pathname === '/dashboard/profile' ?
               'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} py-2 w-full rounded-md uppercase flex gap-x-2 justify-start items-center hover:bg-primary hover:text-light 
+              'bg-light text-grey-dark'} sidebar-link 
             `}
           >
-            <span className='text-18px'><AiTwotoneProfile /></span>
-            <span className='text-18px'>Profile</span>
+            <span className='text-18px'>
+              <AiTwotoneProfile />
+            </span>
+            <span className='text-18px'>
+              Profile
+            </span>
           </Link>
         </li>
       </ul>
