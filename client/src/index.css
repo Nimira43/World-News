@@ -34,3 +34,11 @@ a, button, .label {
 .hover-transition {
   transition: all 0.5s ease-in-out;
 }
+
+.selector {
+  @apply w-48 px-4 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10;
+}
+
+.search-bar {
+  @apply w-full px-4 py-4 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10
+}
