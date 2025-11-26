@@ -25,7 +25,7 @@ const NewsContent = () => {
       </div>
       <div className='overflow-x-auto'>
         <table className='table-wrapper'>
-          <thead className='text-primary uppercase text-sm'>
+          <thead className='table-header'>
             <tr>
               <th className='py-4 px-6 text-left'>No</th>
               <th className='py-4 px-6 text-left'>Title</th>
@@ -79,7 +79,7 @@ const NewsContent = () => {
           </tbody>
         </table>
       </div>
-      <div className='flex justify-between items-center py-6'>
+      <div className='just-between py-6'>
         <div className='flex items-center gap-4'>
           <label className='text-sm font-medium'>News Per Page</label>
           <select

@@ -36,8 +36,16 @@ a, button, .label {
   transition: all 0.5s ease-in-out;
 }
 
+.just-between {
+  @apply flex justify-between items-center;
+}
+
+.centre {
+  @apply flex justify-centre items-center;
+}
+
 .selector {
-  @apply px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark
+  @apply px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark;
 }
 .search-bar {
   @apply w-full px-4 py-4 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10;
@@ -45,6 +53,10 @@ a, button, .label {
 
 .table-wrapper {
   @apply w-full table-auto bg-grey-light-extra shadow-lg rounded-md overflow-hidden;
+}
+
+.table-header {
+  @apply text-primary uppercase text-sm;
 }
 
 .badge {
