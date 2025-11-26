@@ -85,7 +85,7 @@ const NewsContent = () => {
           <select
             name="category"
             id="category"
-            className='px-4 py-2 rounded-md border border-grey-medium focus:border-grey-dark'
+            className='selector'
           >
             <option value="5">5</option>
             <option value="10">10</option>
@@ -96,8 +96,8 @@ const NewsContent = () => {
         <div className='flex items-center gap-4 text-sm text-grey-dark'>
           <span>5 of 15</span>
           <div className='flex gap-2'>
-            <AiOutlineCaretLeft className='w-6 h-6 text-grey-dark cursor-pointer hover:text-primary'/>
-            <AiOutlineCaretRight className='w-6 h-6 text-grey-dark cursor-pointer hover:text-primary'/>
+            <AiOutlineCaretLeft className='arrow'/>
+            <AiOutlineCaretRight className='arrow'/>
           </div>
         </div>
       </div>
