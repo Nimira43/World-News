@@ -111,7 +111,7 @@ function App() {
                 } 
               />
               <Route 
-                path='new/create' 
+                path='news/create' 
                 element={
                   <CreateNews />
                 } 
