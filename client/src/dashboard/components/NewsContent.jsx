@@ -20,7 +20,7 @@ const NewsContent = () => {
         </select>
         <input 
           type='text' 
-          placeholder='Search' className='search-bar' 
+          placeholder='Search' className='search-bar w-full px-4 py-4' 
         />
       </div>
       <div className='overflow-x-auto'>
