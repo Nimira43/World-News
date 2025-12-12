@@ -9,7 +9,7 @@ import { BiLayerPlus } from 'react-icons/bi'
 const Sidebar = () => {
   const { pathname } = useLocation()
   const userInfo = {
-    role: 'admin'
+    role: 'writer'
   }
 
   return (

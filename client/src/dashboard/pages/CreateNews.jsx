@@ -1,7 +1,7 @@
 const CreateNews = () => {
   return (
-    <div>
-      <h1>Create News</h1>
+    <div className='bg-grey-light-extra rounded-md p-6'>
+      <div className='just-between'></div>
     </div>
   )
 }
