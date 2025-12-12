@@ -23,26 +23,50 @@ const Sidebar = () => {
         {
           userInfo.role === 'admin' ?
             <>
+              <li>
+                <Link 
+                  to='/dashboard/admin' 
+                  className={`
+                    px-3 ${pathname === '/dashboard/admin' ?
+                    'bg-grey-dark text-light' :
+                    'bg-light text-grey-dark'} sidebar-link 
+                  `}
+                >
+                  <span className='text-18px'>
+                    <LuLayoutDashboard />
+                    </span>
+                  <span className='text-18px'>
+                    Dashboard
+                  </span>
+                </Link>
+              </li>
+
+              <li>
+                <Link 
+                  to='/dashboard/writers/add' 
+                  className={`
+                    px-3 ${pathname === '/dashboard/writers/add' ?
+                    'bg-grey-dark text-light' :
+                    'bg-light text-grey-dark'} sidebar-link 
+                  `}
+                >
+                  <span className='text-18px'>
+                    <TbPencilPlus />
+                  </span>
+                  <span className='text-18px'>
+                    Add Journalist
+                  </span>
+                </Link>
+              </li>
+            </>
+
+            :
+
+            <>
             
             </>
         }
-        <li>
-          <Link 
-            to='/dashboard/admin' 
-            className={`
-              px-3 ${pathname === '/dashboard/admin' ?
-              'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} sidebar-link 
-            `}
-          >
-            <span className='text-18px'>
-              <LuLayoutDashboard />
-              </span>
-            <span className='text-18px'>
-              Dashboard
-            </span>
-          </Link>
-        </li>
+        
         <li>
           <Link 
             to='/dashboard/news' 
@@ -77,23 +101,7 @@ const Sidebar = () => {
             </span>
           </Link>
         </li>
-        <li>
-          <Link 
-            to='/dashboard/writers/add' 
-            className={`
-              px-3 ${pathname === '/dashboard/writers/add' ?
-              'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} sidebar-link 
-            `}
-          >
-            <span className='text-18px'>
-              <TbPencilPlus />
-            </span>
-            <span className='text-18px'>
-              Add Journalist
-            </span>
-          </Link>
-        </li>
+        
         <li>
           <Link 
             to='/dashboard/writers' 
