@@ -8,6 +8,9 @@ import { BiLayerPlus } from 'react-icons/bi'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
+  const userInfo = {
+    role: 'writer'
+  }
 
   return (
     <div className='w-[250px] h-screen fixed left-0 top-0 bg-grey-light'>
