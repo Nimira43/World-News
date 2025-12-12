@@ -1,5 +1,5 @@
-
-import { Navigate, Outlet } from "react-router-dom"
+import { Navigate, Outlet } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const ProtectRole = ({role}) => {
 
@@ -12,6 +12,10 @@ const ProtectRole = ({role}) => {
   } else {
     return <Navigate to='/dashboard/unable-access' />
   }
+}
+
+ProtectRole.propTypes = {
+  role: PropTypes.string.isRequired
 }
 
 export default ProtectRole
