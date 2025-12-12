@@ -20,29 +20,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        
-        <Route 
-          path='/login' 
-          element={
-            <Login />
-          } 
-        />
-        
-        <Route 
-          path='/dashboard' 
-          element={
-            <ProtectDashboard />
-          } 
-        >
+        <Route path='/login' element={<Login />} />
 
-          <Route 
-            path='' 
-            element={
-              <MainLayout />
-            } 
-          >
-
-            <Route 
+        <Route path='/dashboard' element={<ProtectDashboard />}>
+          <Route path='' element={<MainLayout />}>
+            <Route
               path='' 
               element={
                 userInfo.role === 'admin' 
@@ -50,72 +32,17 @@ function App() {
                 : <Navigate to='/dashboard/writer' />
               }    
             />
-
-            <Route 
-              path='unable-access' 
-              element={
-                <Unable />
-              } 
-            />
-            
-            <Route 
-              path='profile' 
-              element={
-                <Profile />
-              } 
-            />
-            
-            <Route 
-              path='news' 
-              element={
-                <News />
-              } 
-            />
-            
-            <Route 
-              path='' 
-              element={
-                <ProtectRole role='admin' />
-              } 
-            >  
-              <Route 
-                path='admin' 
-                element={
-                  <AdminIndex />
-                } 
-              /> 
-              <Route 
-                path='writers/add' 
-                element={
-                  <AddWriter />
-                } 
-              />
-              <Route 
-                path='writers' 
-                element={
-                  <Writers />
-                } 
-              />
+            <Route path='unable-access' element={<Unable />} />
+            <Route path='profile' element={<Profile />} />
+            <Route path='news' element={<News />} />
+            <Route path='' element={<ProtectRole role='admin' />}>  
+              <Route path='admin' element={<AdminIndex />} /> 
+              <Route path='writers/add' element={<AddWriter />} />
+              <Route path='writers' element={<Writers />} />
             </Route>
-            
-            <Route 
-              path='' 
-              element={
-                <ProtectRole role='writer' />
-              } 
-            >
-              <Route 
-                path='writer' 
-                element={
-                  <WriterIndex />
-                } 
-              />
-              <Route 
-                path='news/create' 
-                element={
-                  <CreateNews />
-                } 
-              />
+            <Route path='' element={<ProtectRole role='writer' />}>
+              <Route path='writer' element={<WriterIndex />} />
+              <Route path='news/create' element={<CreateNews />} />
             </Route>
           </Route>
         </Route>
