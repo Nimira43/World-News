@@ -58,6 +58,24 @@ const Sidebar = () => {
                   </span>
                 </Link>
               </li>
+            
+              <li>
+                <Link 
+                  to='/dashboard/writers' 
+                  className={`
+                    px-3 ${pathname === '/dashboard/writers' ?
+                    'bg-grey-dark text-light' :
+                    'bg-light text-grey-dark'} sidebar-link 
+                  `}
+                >
+                  <span className='text-18px'>
+                    <BsPencilSquare />
+                  </span>
+                  <span className='text-18px'>
+                    Journalists
+                  </span>
+                </Link>
+              </li>
             </>
 
             :
@@ -102,23 +120,7 @@ const Sidebar = () => {
           </Link>
         </li>
         
-        <li>
-          <Link 
-            to='/dashboard/writers' 
-            className={`
-              px-3 ${pathname === '/dashboard/writers' ?
-              'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} sidebar-link 
-            `}
-          >
-            <span className='text-18px'>
-              <BsPencilSquare />
-            </span>
-            <span className='text-18px'>
-              Journalists
-            </span>
-          </Link>
-        </li>
+        
         <li>
           <Link 
             to='/dashboard/profile' 
