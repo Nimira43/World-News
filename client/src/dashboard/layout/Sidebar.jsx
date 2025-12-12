@@ -9,7 +9,7 @@ import { BiLayerPlus } from 'react-icons/bi'
 const Sidebar = () => {
   const { pathname } = useLocation()
   const userInfo = {
-    role: 'writer'
+    role: 'admin'
   }
 
   return (
@@ -44,7 +44,7 @@ const Sidebar = () => {
               <Link 
                 to='/dashboard/writer/add' 
                 className={`
-                  px-3 ${pathname === '/dashboard/writers/add' ?
+                  px-3 ${pathname === '/dashboard/writer/add' ?
                   'bg-grey-dark text-light' :
                   'bg-light text-grey-dark'} sidebar-link 
                 `}

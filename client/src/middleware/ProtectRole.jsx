@@ -5,7 +5,7 @@ const ProtectRole = ({role}) => {
 
   const userInfo = {
     name: 'User',
-    role: 'writer'
+    role: 'admin'
   }
   if (userInfo.role === role) {
     return <Outlet />
