@@ -20,69 +20,102 @@ const Sidebar = () => {
         </Link>
       </div>
       <ul className='px-3 flex flex-col gap-y-1 font-medium'>
-        {
-          userInfo.role === 'admin' ?
-            <>
-              <li>
-                <Link 
-                  to='/dashboard/admin' 
-                  className={`
-                    px-3 ${pathname === '/dashboard/admin' ?
-                    'bg-grey-dark text-light' :
-                    'bg-light text-grey-dark'} sidebar-link 
-                  `}
-                >
-                  <span className='text-18px'>
-                    <LuLayoutDashboard />
-                    </span>
-                  <span className='text-18px'>
-                    Dashboard
+        { userInfo.role === 'admin' ?
+          <>
+            <li>
+              <Link 
+                to='/dashboard/admin' 
+                className={`
+                  px-3 ${pathname === '/dashboard/admin' ?
+                  'bg-grey-dark text-light' :
+                  'bg-light text-grey-dark'} sidebar-link 
+                `}
+              >
+                <span className='text-18px'>
+                  <LuLayoutDashboard />
                   </span>
-                </Link>
-              </li>
+                <span className='text-18px'>
+                  Dashboard
+                </span>
+              </Link>
+            </li>
 
-              <li>
-                <Link 
-                  to='/dashboard/writers/add' 
-                  className={`
-                    px-3 ${pathname === '/dashboard/writers/add' ?
-                    'bg-grey-dark text-light' :
-                    'bg-light text-grey-dark'} sidebar-link 
-                  `}
-                >
-                  <span className='text-18px'>
-                    <TbPencilPlus />
+            <li>
+              <Link 
+                to='/dashboard/writers/add' 
+                className={`
+                  px-3 ${pathname === '/dashboard/writers/add' ?
+                  'bg-grey-dark text-light' :
+                  'bg-light text-grey-dark'} sidebar-link 
+                `}
+              >
+                <span className='text-18px'>
+                  <TbPencilPlus />
+                </span>
+                <span className='text-18px'>
+                  Add Journalist
+                </span>
+              </Link>
+            </li>
+          
+            <li>
+              <Link 
+                to='/dashboard/writers' 
+                className={`
+                  px-3 ${pathname === '/dashboard/writers' ?
+                  'bg-grey-dark text-light' :
+                  'bg-light text-grey-dark'} sidebar-link 
+                `}
+              >
+                <span className='text-18px'>
+                  <BsPencilSquare />
+                </span>
+                <span className='text-18px'>
+                  Journalists
+                </span>
+              </Link>
+            </li>
+          </>
+
+          :
+
+          <>
+            <li>
+              <Link 
+                to='/dashboard/writer' 
+                className={`
+                  px-3 ${pathname === '/dashboard/writer' ?
+                  'bg-grey-dark text-light' :
+                  'bg-light text-grey-dark'} sidebar-link 
+                `}
+              >
+                <span className='text-18px'>
+                  <LuLayoutDashboard />
                   </span>
-                  <span className='text-18px'>
-                    Add Journalist
-                  </span>
-                </Link>
-              </li>
+                <span className='text-18px'>
+                  Dashboard
+                </span>
+              </Link>
+            </li>
             
-              <li>
-                <Link 
-                  to='/dashboard/writers' 
-                  className={`
-                    px-3 ${pathname === '/dashboard/writers' ?
-                    'bg-grey-dark text-light' :
-                    'bg-light text-grey-dark'} sidebar-link 
-                  `}
-                >
-                  <span className='text-18px'>
-                    <BsPencilSquare />
-                  </span>
-                  <span className='text-18px'>
-                    Journalists
-                  </span>
-                </Link>
-              </li>
-            </>
-
-            :
-
-            <>
-            
-            </>
+            <li>
+              <Link 
+                to='/dashboard/news/create' 
+                className={`
+                  px-3 ${pathname === '/dashboard/news/create' ?
+                  'bg-grey-dark text-light' :
+                  'bg-light text-grey-dark'} sidebar-link 
+                `}
+              >
+                <span className='text-18px'>
+                  <BiLayerPlus />
+                </span>
+                <span className='text-18px'>
+                  Add News
+                </span>
+              </Link>
+            </li>
+          </>
         }
         
         <li>
@@ -102,25 +135,6 @@ const Sidebar = () => {
             </span>
           </Link>
         </li>
-        <li>
-          <Link 
-            to='/dashboard/news/create' 
-            className={`
-              px-3 ${pathname === '/dashboard/news/create' ?
-              'bg-grey-dark text-light' :
-              'bg-light text-grey-dark'} sidebar-link 
-            `}
-          >
-            <span className='text-18px'>
-              <BiLayerPlus />
-            </span>
-            <span className='text-18px'>
-              Add News
-            </span>
-          </Link>
-        </li>
-        
-        
         <li>
           <Link 
             to='/dashboard/profile' 
