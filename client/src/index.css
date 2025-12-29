@@ -51,6 +51,10 @@ a, button, .label {
   @apply h-10 rounded-md border border-grey-medium outline-0 focus:border-grey-dark bg-light hover-transition;
 }
 
+.image-label {
+  @apply centre flex-col text-grey-dark border border-dashed border-grey-medium hover:border-grey-dark hover-transition outline-0 cursor-pointer
+}
+
 .input-field {
   @apply px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10;
 }

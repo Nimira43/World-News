@@ -31,15 +31,19 @@ const CreateNews = () => {
         </div>
         <div>
           <label 
-            htmlFor='name' 
-            className='w-full h-[240px]
-            flex flex-col items-center justify-center cursor-pointer rounded-md border 
-            border-grey-medium outline-0 focus:border-grey-dark
-            text-grey-dark uppercase text-md mt-4'
+            htmlFor='img' 
+            className='w-full h-[240px] mt-4 rounded-md image-label'
           >
-            <RiImageCircleLine
-              className='text-4xl' />
-            <span className='mt-2 font-medium'>Select Image</span>  
+            <RiImageCircleLine className='text-4xl' />
+            <span className='mt-2 font-medium uppercase'>
+              Select Image
+            </span>
+            <input 
+              type='file'
+              id='img'
+              className='hidden' 
+              required
+            />
           </label>
         </div>
           
