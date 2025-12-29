@@ -1,3 +1,4 @@
+import { RiImageCircleLine } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
 
 const CreateNews = () => {
@@ -13,88 +14,43 @@ const CreateNews = () => {
       </div>
 
       <form>
-          <div className='grid grid-cols-2 gap-x-8 mb-3'>
-            <div className='flex flex-col gap-y-2'>
-              <label 
-                htmlFor='title' 
-                className='block text-grey-dark uppercase text-md font-medium mb-2'
-              >
-                Title  
-              </label>
-              <input
-                id='name' 
-                type='text' 
-                name='name'
-                required
-                className='input-field' 
-              />
-            </div>
-            <div className='flex flex-col gap-y-2'>
-              <label 
-                htmlFor='name' 
-                className='text-grey-dark uppercase text-md'
-              >
-                Category  
-              </label>
-              <select
-                id='name' 
-                name='category'
-                required 
-                className='input-field text-left'
-              >
-                <option 
-                value=''>Select Status</option>
-                <option value='International'>International</option>
-                <option value='Sport'>Sport</option>
-                <option value='Business'>Business</option>
-                <option value='Technology'>Technology</option>
-                <option value='Health'>Health</option>
-                <option value='Entertainment'>Entertainment</option>
-                <option value='Travel'>Travel</option>
-              </select>
-            </div>
-          </div>
-          <div className='grid grid-cols-2 gap-x-8 mb-3'>
-            <div className='flex flex-col gap-y-2'>
-              <label 
-                htmlFor='email' 
-                className='text-grey-dark uppercase text-md'
-              >
-                Email  
-              </label>
-              <input
-                id='email' 
-                type='email' 
-                name='email'
-                required
-                className='input-field' 
-              />
-            </div>
-            <div className='flex flex-col gap-y-2'>
-              <label 
-                htmlFor='password' 
-                className='text-grey-dark uppercase text-md'
-              >
-                Password  
-              </label>
-              <input
-                id='password' 
-                type='password' 
-                name='password'
-                required
-                className='input-field' 
-              />
-            </div>
-          </div>
-          <div className='mt-4'>
-            <button
-              className='px-3 py-[6px] font-medium bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
-            >
-              Add Nres
-            </button>
-          </div>
-        </form>
-
+        <div>
+          <label 
+            htmlFor='title' 
+            className='block text-grey-dark uppercase text-md font-medium mb-2'
+          >
+            Title  
+          </label>
+          <input
+            id='title' 
+            type='text' 
+            name='title'
+            required
+            className='w-full input-field' 
+          />
+        </div>
+        <div>
+          <label 
+            htmlFor='name' 
+            className='w-full h-[240px]
+            flex flex-col items-center justify-center cursor-pointer border 
+            border-grey-medium outline-0 focus:border-grey-dark
+            text-grey-dark uppercase text-md'
+          >
+            <RiImageCircleLine
+              className='text-4xl' />
+            <span className='mt-2 '>Select Image</span>  
+          </label>
+        </div>
+          
+        <div className='mt-4'>
+          <button
+            className='px-3 py-[6px] font-medium bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
+          >
+            Add News
+          </button>
+        </div>
+      </form>
     </div>
   )
 }
