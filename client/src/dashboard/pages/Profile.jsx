@@ -11,7 +11,7 @@ const Profile = () => {
             className='w-[150px] h-[150px] centre flex-col  rounded-full bg-light border-2 border-grey-medium text-grey-dark cursor-pointer hover:bg-primary hover:text-light label'
           >
             <RiImageCircleLine className='text-4xl' />
-            <span className='mt-2'>Select Image</span>
+            <span className='mt-2 font-medium'>Select Image</span>
             <input 
               type='file'
               id='img'

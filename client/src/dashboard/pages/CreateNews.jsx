@@ -33,13 +33,13 @@ const CreateNews = () => {
           <label 
             htmlFor='name' 
             className='w-full h-[240px]
-            flex flex-col items-center justify-center cursor-pointer border 
+            flex flex-col items-center justify-center cursor-pointer rounded-md border 
             border-grey-medium outline-0 focus:border-grey-dark
-            text-grey-dark uppercase text-md'
+            text-grey-dark uppercase text-md mt-4'
           >
             <RiImageCircleLine
               className='text-4xl' />
-            <span className='mt-2 '>Select Image</span>  
+            <span className='mt-2 font-medium'>Select Image</span>  
           </label>
         </div>
           
