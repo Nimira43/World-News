@@ -11,6 +11,21 @@ const CreateNews = () => {
           View All
         </Link>
       </div>
+
+      <form>
+        <div>
+          <label
+            htmlFor='title'
+            className='block text-md font-medium text-grey-medium mb'
+          >
+            Title
+          </label>
+        </div>
+
+
+      </form>
+
+
     </div>
   )
 }
