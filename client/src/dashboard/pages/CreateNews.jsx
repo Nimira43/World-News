@@ -16,10 +16,10 @@ const CreateNews = () => {
           <div className='grid grid-cols-2 gap-x-8 mb-3'>
             <div className='flex flex-col gap-y-2'>
               <label 
-                htmlFor='name' 
-                className='text-grey-dark uppercase text-md'
+                htmlFor='title' 
+                className='block text-grey-dark uppercase text-md font-medium mb-2'
               >
-                Name  
+                Title  
               </label>
               <input
                 id='name' 
