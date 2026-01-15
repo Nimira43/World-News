@@ -1,7 +1,11 @@
-import { RiImageCircleLine } from 'react-icons/ri'
+import { IoImagesOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
+import JoditEditor from 'jodit-react'
+import { useState } from 'react'
 
 const CreateNews = () => {
+  const [loader, setLoader] = useState(false)
+
   return (
     <div>
       <div className='just-between mb-6 p-4'>
@@ -34,24 +38,43 @@ const CreateNews = () => {
             htmlFor='img' 
             className='w-full h-[240px] mt-4 rounded-md image-label'
           >
-            <RiImageCircleLine className='text-4xl' />
+            <IoImagesOutline className='text-4xl' />
             <span className='mt-2 font-medium uppercase'>
               Select Image
-            </span>
-            <input 
+            </span>  
+          </label>
+          <input 
               type='file'
               id='img'
               className='hidden' 
               required
             />
-          </label>
         </div>
+        <div className='just-between mb-2 mt-4'>
+          <label
+            htmlFor='description'
+            className='block text-md font-medium  uppercase'
+          >
+            Description
+          </label>
+          <div className='hover:text-primary hover-transition'>
+            <IoImagesOutline className='text-2xl' />
+          </div>
+        </div>
+        <JoditEditor
+          className='w-full'
+        />
           
         <div className='mt-4'>
           <button
+            type='submit'
+            disabled={loader}
             className='px-3 py-[6px] font-medium bg-grey-dark hover:bg-primary text-light uppercase rounded-md'
           >
-            Add News
+            {loader 
+              ? 'Loading,,,'
+              : 'Add News'  
+            }
           </button>
         </div>
       </form>

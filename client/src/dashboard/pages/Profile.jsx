@@ -1,4 +1,4 @@
-import { RiImageCircleLine } from 'react-icons/ri'
+import { IoImageOutline } from 'react-icons/io5'
 
 const Profile = () => {
 
@@ -10,7 +10,7 @@ const Profile = () => {
             htmlFor='img'
             className='w-[150px] h-[150px] rounded-full bg-light image-label'
           >
-            <RiImageCircleLine className='text-4xl' />
+            <IoImageOutline className='text-4xl' />
             <span className='mt-2 font-medium uppercase'>
               Select Image
             </span>
