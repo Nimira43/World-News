@@ -2,9 +2,12 @@ import { IoImagesOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import JoditEditor from 'jodit-react'
 import { useState } from 'react'
+import Gallery from '../components/Gallery'
 
 const CreateNews = () => {
   const [loader, setLoader] = useState(false)
+  const [show, setShow] = useState(false)
+  const [images, setImages] = useState([])
 
   return (
     <div>
@@ -57,7 +60,10 @@ const CreateNews = () => {
           >
             Description
           </label>
-          <div className='hover:text-primary hover-transition'>
+          <div
+            className='hover:text-primary hover-transition'
+            onClick={() => setShow(true)}
+          >
             <IoImagesOutline className='text-2xl' />
           </div>
         </div>
@@ -78,6 +84,18 @@ const CreateNews = () => {
           </button>
         </div>
       </form>
+      {show && (
+        <Gallery
+          setShow={setShow}
+          images={images}
+        />
+      )}
+      <input
+        type='file'
+        multiple
+        id='images'
+        className='hidden'
+      />
     </div>
   )
 }
