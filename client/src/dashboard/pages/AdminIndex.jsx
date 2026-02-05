@@ -11,7 +11,7 @@ const AdminIndex = () => {
           {title: 'Pending News', value: 63},
           {title: 'Edit News', value: 19},
           {title: 'Delete News', value: 48},
-          {title: 'Create News', value: 16},
+          {title: 'Journalists', value: 16},
         ].map((start, i) => (
           <div
             key={i}
