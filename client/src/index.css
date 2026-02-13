@@ -61,7 +61,7 @@ a, button, .label {
 }
 
 .input-field {
-  @apply px-3 py-2 rounded-md border border-grey-medium outline-0 focus:border-grey-dark h-10 hover-transition;
+  @apply px-3 py-2 rounded-md border border-grey-medium outline-none focus:ring-1 focus:border-grey-dark h-10 hover-transition;
 }
 
 .table-wrapper {

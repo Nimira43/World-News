@@ -5,6 +5,7 @@ import { TbPencilPlus } from 'react-icons/tb'
 import { BsPencilSquare } from 'react-icons/bs'
 import { AiTwotoneProfile } from 'react-icons/ai'
 import { BiLayerPlus } from 'react-icons/bi'
+import { LiaGlobeEuropeSolid } from 'react-icons/lia'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
@@ -14,11 +15,12 @@ const Sidebar = () => {
 
   return (
     <div className='w-[250px] h-screen fixed left-0 top-0 bg-grey-light'>
-      <div className='h-[70px] flex justify-center items-center'>
-        <Link to='/'>
-          <span className='logo w-[190px] h-[35px]'>World News</span>
-        </Link>
-      </div>
+      <Link to='/'>
+        <div className='h-[70px] flex justify-center items-center gap-2'>
+          <LiaGlobeEuropeSolid className='text-3xl' />
+          <span className='logo'>World News</span>  
+        </div>
+      </Link>
       <ul className='px-3 flex flex-col gap-y-1 font-medium'>
         { userInfo.role === 'admin' ?
           <>
