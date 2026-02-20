@@ -3,6 +3,22 @@ import { LiaGlobeEuropeSolid } from 'react-icons/lia'
 
 const Login = () => {
   const [loader, setLoader] = useState(false)
+  const [state, setState] = useState({
+    email: '',
+    password: ''
+  })
+
+  const inputHandle = (e) => {
+    setState({
+      ...state,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const submit = async (e) => {
+    e.preventDefault()
+    console.log(state)
+  }
 
   return (
     <div className='min-h-screen bg-primary-light flex items-center justify-center'>
@@ -12,7 +28,10 @@ const Login = () => {
             <LiaGlobeEuropeSolid className='text-3xl' />
             <span className='logo'>World News</span>
           </div>
-          <form className='space-y-6'>
+          <form
+            className='space-y-6'
+            onSubmit={submit}
+          >
             {/* <div className='flex flex-col gap-y-2'>
               <label 
                 htmlFor='name' 
@@ -44,6 +63,8 @@ const Login = () => {
                 name='email'
                 required
                 className='input-field' 
+                value={state.email}
+                onChange={inputHandle}
               />
             </div>
             <div className='flex flex-col gap-y-2'>
@@ -59,6 +80,8 @@ const Login = () => {
                 name='password'
                 required
                 className='input-field' 
+                value={state.password}
+                onChange={inputHandle}
               />
             </div>
             <div className='mt-4'>
