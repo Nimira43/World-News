@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { LiaGlobeEuropeSolid } from 'react-icons/lia'
+import { base_url } from '../../config/config'
+import axios from 'axios'
+import toast from 'react-hot-toast'
 
 const Login = () => {
   const [loader, setLoader] = useState(false)
@@ -17,7 +20,12 @@ const Login = () => {
 
   const submit = async (e) => {
     e.preventDefault()
-    console.log(state)
+    try {
+      const { data } = await axios.post(`${base_url}/api/login`, state)
+      console.log(data)
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
