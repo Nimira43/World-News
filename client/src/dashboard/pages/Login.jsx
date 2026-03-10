@@ -1,3 +1,6 @@
+console.log("LOGIN COMPONENT LOADED")
+
+
 import { useState } from 'react'
 import { LiaGlobeEuropeSolid } from 'react-icons/lia'
 import { base_url } from '../../config/config'
