@@ -43,21 +43,6 @@ const Login = () => {
             className='space-y-6'
             onSubmit={submit}
           >
-            {/* <div className='flex flex-col gap-y-2'>
-              <label 
-                htmlFor='name' 
-                className='text-grey-dark uppercase text-md font-medium'
-              >
-                Name  
-              </label>
-              <input
-                id='name' 
-                type='text' 
-                name='name'
-                required
-                className='input-field' 
-              />
-            </div> */}
             <div>
               <h1 className='font-medium uppercase text-center text-xl'> Login</h1>
             </div>
