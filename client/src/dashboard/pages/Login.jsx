@@ -33,6 +33,8 @@ const Login = () => {
     }
   }
 
+// Nick - next time you are at 5:09 on lesson: User Login Backen Part 4. You're just added the toast.success on line 30. This comment isn't committed. From Nick on 2/4/26 at 17:24
+
   return (
     <div className='min-h-screen bg-primary-light flex items-center justify-center'>
       <div className='bg-light shadow-lg rounded-sm w-[400px]'>
