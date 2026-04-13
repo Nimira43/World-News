@@ -1,14 +1,17 @@
 console.log("LOGIN COMPONENT LOADED")
 
-
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { LiaGlobeEuropeSolid } from 'react-icons/lia'
 import { base_url } from '../../config/config'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import storeContext from '../../context/storeContext'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const navigate = useNavigate()
   const [loader, setLoader] = useState(false)
+  const { dispatch } = useContext(storeContext)
   const [state, setState] = useState({
     email: '',
     password: ''
@@ -28,6 +31,13 @@ const Login = () => {
       setLoader(false)
       localStorage.setItem('newsToken', data.token)
       toast.success(data.message)
+      dispatch({
+        type: 'login_success',
+        payload: {
+          token: data.token
+        }
+      })
+      navigate('/dashboard')
     } catch (error) {
       console.log(error)
     }
