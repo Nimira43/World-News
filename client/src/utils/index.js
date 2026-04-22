@@ -1,0 +1,23 @@
+import { jwtDecode } from 'jwt-decode'
+
+const decodeToken = (token) => {
+  if (token) {
+    try {
+      const decodeToken = jwtDecode(token)
+      const exp = new Date(decodeToken.exp * 1000)
+
+      if (new Date() > exp) {
+        localStorage.removeItem('newsToken')
+        return ''
+      } else {
+        return decodeToken
+      }
+    } catch (error) {
+      return ''     
+    }
+  } else {
+    return ''
+  }
+}
+
+export default decodeToken
