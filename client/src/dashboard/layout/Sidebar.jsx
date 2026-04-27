@@ -6,12 +6,12 @@ import { BsPencilSquare } from 'react-icons/bs'
 import { AiTwotoneProfile } from 'react-icons/ai'
 import { BiLayerPlus } from 'react-icons/bi'
 import { LiaGlobeEuropeSolid } from 'react-icons/lia'
+import { useContext } from 'react'
+import storeContext from '../../context/storeContext'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
-  const userInfo = {
-    role: 'writer'
-  }
+  const { store } = useContext(storeContext)
 
   return (
     <div className='w-[250px] h-screen fixed left-0 top-0 bg-grey-light'>
@@ -22,7 +22,7 @@ const Sidebar = () => {
         </div>
       </Link>
       <ul className='px-3 flex flex-col gap-y-1 font-medium'>
-        { userInfo.role === 'admin' ?
+        { store.userInfo.role === 'admin' ?
           <>
             <li>
               <Link 
