@@ -3,9 +3,10 @@ import { LuLayoutDashboard } from 'react-icons/lu'
 import { TiNews } from 'react-icons/ti'
 import { TbPencilPlus } from 'react-icons/tb'
 import { BsPencilSquare } from 'react-icons/bs'
-import { AiTwotoneProfile } from 'react-icons/ai'
+import { AiOutlineProfile } from 'react-icons/ai'
 import { BiLayerPlus } from 'react-icons/bi'
 import { LiaGlobeEuropeSolid } from 'react-icons/lia'
+import { RiLogoutBoxRLine } from 'react-icons/ri'
 import { useContext } from 'react'
 import storeContext from '../../context/storeContext'
 
@@ -147,12 +148,26 @@ const Sidebar = () => {
             `}
           >
             <span className='text-18px'>
-              <AiTwotoneProfile />
+              <AiOutlineProfile />
             </span>
             <span className='text-18px'>
               Profile
             </span>
           </Link>
+        </li>
+        <li>
+          <div  
+            className={`
+              px-3 bg-light text-grey-dark sidebar-link 
+            `}
+          >
+            <span className='text-18px'>
+              <RiLogoutBoxRLine />
+            </span>
+            <span className='text-18px'>
+              Logout
+            </span>
+          </div>
         </li>
       </ul>
     </div>
