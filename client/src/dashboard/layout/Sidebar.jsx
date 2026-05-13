@@ -1,6 +1,6 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { LuLayoutDashboard } from 'react-icons/lu'
-import { TiNews } from 'react-icons/ti'
+import { PiNewspaperClipping } from 'react-icons/pi'
 import { TbPencilPlus } from 'react-icons/tb'
 import { BsPencilSquare } from 'react-icons/bs'
 import { AiOutlineProfile } from 'react-icons/ai'
@@ -12,7 +12,14 @@ import storeContext from '../../context/storeContext'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
-  const { store } = useContext(storeContext)
+  const { store, dispatch } = useContext(storeContext)
+  const navigate = useNavigate()
+
+  const logout = () => {
+    localStorage.removeItem('newsToken')
+    dispatch({ type: 'logout', payload: '' })
+    navigate('/login')
+  }
 
   return (
     <div className='w-[250px] h-screen fixed left-0 top-0 bg-grey-light'>
@@ -131,7 +138,7 @@ const Sidebar = () => {
             `}
           >
             <span className='text-18px'>
-              <TiNews />
+              <PiNewspaperClipping />
             </span>
             <span className='text-18px'>
               News
@@ -147,24 +154,25 @@ const Sidebar = () => {
               'bg-light text-grey-dark'} sidebar-link 
             `}
           >
-            <span className='text-18px'>
+            <span className='text-[18px]'>
               <AiOutlineProfile />
             </span>
-            <span className='text-18px'>
+            <span className='text-[18px]'>
               Profile
             </span>
           </Link>
         </li>
         <li>
-          <div  
+          <div 
+            onClick={logout}  
             className={`
               px-3 bg-light text-grey-dark sidebar-link 
             `}
           >
-            <span className='text-18px'>
+            <span className='text-[18px]'>
               <RiLogoutBoxRLine />
             </span>
-            <span className='text-18px'>
+            <span className='text-[18px]'>
               Logout
             </span>
           </div>

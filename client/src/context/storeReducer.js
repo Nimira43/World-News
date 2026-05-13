@@ -10,7 +10,7 @@ const storeReducer = (state, action) => {
 
   if (type === 'logout') {
     state.token = ''
-    state.info = ''
+    state.userInfo = ''
   }
   return state
 }
