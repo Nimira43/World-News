@@ -4,6 +4,20 @@ import { Link } from 'react-router-dom'
 const AddWriter = () => {
   const [loader, setLoader] = useState(false)
 
+  const [state, setState] = useState({
+    name: '',
+    email: '',
+    password: '',
+    category: ''
+  })
+
+  const inputHandle = (e) => {
+    setState({
+      ...state,
+      [e.target.name]: e.target.value
+    })
+  }
+
   return (
     <div>
       <div className='flex justify-between p-4'>
@@ -27,6 +41,8 @@ const AddWriter = () => {
                 Name  
               </label>
               <input
+                onChange={inputHandle}
+                value={state.name}
                 id='name' 
                 type='text' 
                 name='name'
@@ -42,6 +58,8 @@ const AddWriter = () => {
                 Category  
               </label>
               <select
+                onChange={inputHandle}
+                value={state.category}
                 id='name' 
                 name='category'
                 required 
@@ -68,6 +86,8 @@ const AddWriter = () => {
                 Email  
               </label>
               <input
+                onChange={inputHandle}
+                value={state.email}
                 id='email' 
                 type='email' 
                 name='email'
@@ -83,6 +103,8 @@ const AddWriter = () => {
                 Password  
               </label>
               <input
+                onChange={inputHandle}
+                value={state.password}
                 id='password' 
                 type='password' 
                 name='password'
